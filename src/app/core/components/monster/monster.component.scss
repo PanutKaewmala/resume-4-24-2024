@@ -1,0 +1,143 @@
+@media (min-width: 1201px) {
+    .monster {
+        width: 565px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eyes {
+        position: relative;
+        left: 175px;
+        bottom: 415px;
+        display: block;
+    }
+
+    .left-eye {
+        position: relative;
+        display: block;
+        margin-right: 3rem;
+        left: 210px;
+        bottom: 502px;
+    }
+
+    .right-eye {
+        position: relative;
+        display: block;
+        left: 212px;
+        bottom: 490px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .monster {
+        width: 519px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eyes {
+        width: 208px;
+        height: auto;
+        position: relative;
+        left: 158px;
+        bottom: 380px;
+        display: block;
+    }
+
+    .left-eye {
+        width: 53px;
+        height: auto;
+        position: relative;
+        display: block;
+        margin-right: 3rem;
+        left: 182px;
+        bottom: 460px;
+    }
+
+    .right-eye {
+        width: 51px;
+        height: auto;
+        position: relative;
+        display: block;
+        left: 190px;
+        bottom: 450px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .monster {
+        width: 419px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eyes {
+        width: 168px;
+        height: auto;
+        position: relative;
+        left: 129px;
+        bottom: 307px;
+        display: block;
+    }
+
+    .left-eye {
+        width: 42px;
+        height: auto;
+        position: relative;
+        display: block;
+        margin-right: 3rem;
+        left: 156px;
+        bottom: 376px;
+    }
+
+    .right-eye {
+        width: 40px;
+        height: auto;
+        position: relative;
+        display: block;
+        left: 149px;
+        bottom: 362px;
+
+    }
+}
+
+@media (max-width: 650px) {
+    .monster {
+        width: 309px;
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .eyes {
+        width: 120px;
+        height: auto;
+        position: relative;
+        left: 97px;
+        bottom: 225px;
+        display: block;
+    }
+
+    .left-eye {
+        width: 33px;
+        height: auto;
+        position: relative;
+        display: block;
+        margin-right: 3rem;
+        left: 115px;
+        bottom: 275px;
+    }
+
+    .right-eye {
+        width: 30px;
+        height: auto;
+        position: relative;
+        display: block;
+        left: 92px;
+        bottom: 267px;
+    }
+
+}

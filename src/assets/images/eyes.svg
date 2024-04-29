@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="123" viewBox="0 0 224 123" fill="none">
+    <path
+        d="M117 48.7068C117 75.2165 95.9573 101.207 69.9999 101.207C41.9999 106.207 0.999898 94.2165 0.999898 67.7068C-3.5 22.2068 45 -4.79325 69.9999 0.706815C95.9573 0.706815 117 22.1971 117 48.7068Z"
+        fill="url(#paint0_radial_4_27)" />
+    <g filter="url(#filter0_d_4_27)">
+        <path
+            d="M220 72.2068C225.5 107.207 204 124.207 174.5 117.707C149.371 117.707 129 97.3357 129 72.2068C129 47.0778 139.871 21.2068 165 21.2068C190.129 21.2068 220 47.0778 220 72.2068Z"
+            fill="url(#paint1_radial_4_27)" />
+    </g>
+    <defs>
+        <filter id="filter0_d_4_27" x="124" y="16.2068" width="99.8615" height="105.863"
+            filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <feColorMatrix in="SourceAlpha" type="matrix"
+                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+            <feOffset dx="-1" dy="-1" />
+            <feGaussianBlur stdDeviation="2" />
+            <feComposite in2="hardAlpha" operator="out" />
+            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.77 0" />
+            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_4_27" />
+            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_4_27" result="shape" />
+        </filter>
+        <radialGradient id="paint0_radial_4_27" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(75.5 58.5) rotate(-164.643) scale(73.6291 67.0054)">
+            <stop offset="0.436" stop-color="#FCFEFD" />
+            <stop offset="1" stop-color="#8A8B90" />
+        </radialGradient>
+        <radialGradient id="paint1_radial_4_27" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+            gradientTransform="translate(190.5 73.5) rotate(-144.719) scale(64.925 60.9432)">
+            <stop offset="0.466" stop-color="#FCFEFD" />
+            <stop offset="1" stop-color="#979897" />
+        </radialGradient>
+    </defs>
+</svg>
