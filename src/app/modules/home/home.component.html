@@ -1,15 +1,16 @@
 <div class="section flex items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div>
+    <div [ngStyle]="{ 'opacity': imageOpacityValue / 100 }">
         <app-monster></app-monster>
     </div>
     <div class="text">
-      <span class="title">Hi, my <br/> name is <span class="title highlight">Gear.</span></span>
+      <span class="title" [ngStyle]="{ 'opacity': textFirstOpacityValue / 100 }">Hi, my <br/> name is <span class="titleHighlight">Gear.</span></span>
       <br/><br/>
-      <span class="description md:inline-block">I’m an <span class="script highlight">front-end developer</span> new graduates from Phayao University.</span>
+      <span class="description description-hidden md:inline-block" [ngStyle]="{ 'opacity': textSecondOpacityValue / 100 }">I’m an <span class="descriptionHighlight highlight">front-end developer</span> new graduates from Phayao University.</span>
     </div>
 </div>
+
 <div class="container">
-    <div class="wave-text grid grid-row-7 grid-flow-col gap-1 w-20">
+    <div class="wave-text grid grid-row-7 grid-flow-col gap-1 w-20" [ngStyle]="{ 'opacity': containerOpacityValue / 100 }">
         <span style="--i:1;">S</span>
         <span style="--i:2;">C</span>
         <span style="--i:3;">R</span>
@@ -22,9 +23,64 @@
     </div>
 </div>
 
-<div class="box">
-
+<div class="experience font-custom box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mb-48">
+        <h1 class="work-experience sub-title">Work experience<br>that i have<h1 class="highlight">.</h1></h1>
+        <div class="blod-line"></div>
+        <span class="text-justify description">In my second year I work as a software developer at <span class="highlight">Codium company</span> in a front-end developer role. And when junior, I worked here for an additional 6 months.</span>
+        <app-button class="button" buttonText="About Codium Company" linkName="https://www.codium.co/"></app-button>
+    </div>
 </div>
-<div class="box a">
 
+<div class="font-custom box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="mb-8">
+        <h1 class="mb-8 sub-title">Projects on firebase<h1 class="highlight">.</h1></h1>
+        <span class="description">Here are some coding exercises I have done regarding <span class="highlight">html css typescript.</span></span>
+    </div>
+</div>
+
+<div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="image mb-8">
+        <video autoplay loop muted>
+            <source src="../../../assets/videos/screen-calendar.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>  
+    </div>
+    <div class="project-detail">
+        <h1 class="description-title">R-remind</h1>
+        <span class="description">Calendar system with notifications via LINE. It will notify you when events are added. and will be notified again before the activity day.</span>
+        <br>
+        <span class="description mb-8"><span class="highlight">Use Angular Django</span> to create the website. <span class="highlight">Use MySQL</span> is database. Make is responsive website.</span>
+    </div>
+</div>
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div>
+
+<div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="image mb-8">
+        <video autoplay loop muted>
+            <source src="../../../assets/videos/screen-resume.webm" type="video/webm">
+            Your browser does not support the video tag.
+        </video>    
+    </div>
+    <div class="project-detail">
+        <h1 class="description-title">Resume in  2021</h1>
+        <span class="description">Resume in the form of a website, with the highlight being the space background and slides pages.</span>
+        <br>
+        <span class="description"><span class="highlight">use HTML Css and Javascript</span> to create the website. And there's also the Swiper extension for page transitions by sliding.</span>
+        <app-button class="button" buttonText="View Resume 2021" linkName="https://resume-56691.web.app/"></app-button>
+    </div>
+</div>
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div>
+
+<div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="image mb-8">
+        <img src="../../../assets/images/cv-2022.png" alt="">
+    </div>
+    <div class="project-detail">
+        <h1 class="description-title">Resume in 2022</h1>
+        <span class="description">Resume in the form of a website. The highlight is changing pages and graphs.</span>
+        <br>
+        <span class="description"><span class="highlight">Use angular router firebase</span> to create a website. And the file structure has been organized to be more organized.</span>
+        <app-button class="button" buttonText="View Resume 2022" linkName="https://cv-2022-b75f5.firebaseapp.com/app-myself"></app-button>
+    </div>
 </div>

@@ -1,11 +1,22 @@
 .hire-me-link:hover {
-    color: white;
+    color: #fff;
 }
 
 .hire-me-link:hover svg {
-    fill: white;
+    fill: #fff;
 }
 
 a {
+    cursor: pointer;
     font-weight: 600
+}
+
+.demo-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    text-align: start;
+    width: 90px;
+    height: 100%;
 }

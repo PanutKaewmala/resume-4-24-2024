@@ -1,0 +1,256 @@
+@import '../../../styles.scss';
+
+.blod-line {
+    width: 0px;
+    height: 6px;
+    border-radius: 100px;
+    background: $primary-color;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    animation: lineZoomIn 1s ease forwards;
+}
+
+.title {
+    font-size: 78px;
+    opacity: 0;
+    animation: textAppear 2s forwards;
+    animation-delay: 0.3s;
+}
+
+.titleHighlight {
+    color: $primary-color;
+    font-weight: 400;
+}
+
+.sub-title {
+    font-size: 58px;
+    font-weight: 380;
+}
+
+.detail {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    display: block;
+    width: 75%;
+    opacity: 0;
+    animation: textAppear 2s forwards;
+    animation-delay: 0.9s;
+}
+
+.discription-title {
+    font-weight: 480;
+}
+
+.discription {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.content-right {
+    margin-right: 6rem;
+    width: 50%;
+}
+
+.content-left {
+    margin-left: 6rem;
+    width: 50%;
+}
+
+.projects {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-reverse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.group-icons {
+    position: relative;
+    z-index: 1;
+}
+
+.skill-texts {
+    position: relative;
+    margin: 0 auto;
+    bottom: 200px;
+}
+
+.skill-texts div {
+    position: absolute;
+}
+
+.image {
+    width: 50%;
+    height: auto;
+}
+
+.text-effect {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: textAppear 2s forwards;
+    animation-delay: 1.5s;
+}
+
+.wave-text span {
+    font-size: 12px;
+    animation: wave 1s ease-in-out infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+.line-effect {
+    display: flex;
+    justify-content: center;
+}
+
+.line-effect {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    background-color: rgb(209, 213, 219);
+    width: 1px;
+    height: 50vh;
+    margin-bottom: 10rem;
+    animation: vLineIn 1s ease-in-out 1.5s backwards;
+}
+
+.image img {
+    transition: transform 0.3s ease;
+}
+
+.image img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes wave {
+
+    0% {
+        transform: translateY(0px);
+    }
+
+    20% {
+        transform: translateY(-10px);
+    }
+
+    40%,
+    100% {
+        transform: translate(0px);
+    }
+}
+
+@keyframes vLineIn {
+    0% {
+        transform: scaleY(0)
+    }
+}
+
+@keyframes lineZoomIn {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 8%;
+    }
+}
+
+@keyframes textAppear {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@media (max-width: 1100px) {
+    .title {
+        font-size: 68px;
+        font-weight: 380;
+    }
+
+    .sub-title {
+        font-size: 60px;
+    }
+
+    .discription-title {
+        font-size: 40px;
+    }
+
+    .discription {
+        font-size: 20px;
+    }
+
+    .detail {
+        font-size: 20px;
+        font-style: normal;
+    }
+
+    .projects {
+        display: block;
+    }
+
+    .projects-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .text-end {
+        text-align: start;
+    }
+
+    .content-left,
+    .content-right {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .title {
+        font-size: 38px;
+    }
+
+    .sub-title {
+        font-size: 28px;
+    }
+
+    .discription-title {
+        font-size: 22px;
+    }
+
+    .discription {
+        font-size: 16px;
+    }
+
+    .detail {
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+    .skill-texts {
+        bottom: 150px;
+    }
+
+}

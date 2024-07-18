@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+// setcolor
+$primary-color: #8CCED7;
+$bg-color: rgb(24 24 27);
+
 body {
     font-weight: normal !important;
 }
@@ -15,7 +19,7 @@ body {
     margin: 0;
     max-width: 100vw;
     background: rgb(24 24 27);
-    color: white;
+    color: rgb(209, 213, 219);
     font-weight: normal;
 
     * {
@@ -78,10 +82,10 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: #fff;
     text-decoration: none;
 }
 
 .highlight {
-    color: #8CCED7;
+    color: $primary-color;
 }

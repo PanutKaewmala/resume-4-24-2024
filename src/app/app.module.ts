@@ -8,13 +8,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { MonsterComponent } from './core/components/monster/monster.component';
 import { HomeComponent } from './modules/home/home.component';
+import { ButtonComponent } from './shared/components/button/button.component';
+import { AboutComponent } from './modules/about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     MonsterComponent,
-    HomeComponent
+    HomeComponent,
+    ButtonComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,

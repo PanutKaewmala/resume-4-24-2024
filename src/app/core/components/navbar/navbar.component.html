@@ -17,16 +17,15 @@
       </div>
       <div class="flex flex-1 items-center justify-center sm:justify-start">
         <div class="flex flex-shrink-0 items-center">
-          <a href="#">
-            <img class="h-24 w-auto" src="../../../../assets/images/G-logo-removebg-preview.png" alt="Your Company">
+          <a [routerLink]="['']" routerLinkActive="active">
+            <img class="h-24 w-auto" src="../../../../assets/images/G-logo-removebg-preview.png" alt="web-icon">
           </a>
         </div>
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <a href="#" class="" aria-current="page">Home</a>
-            <a href="#" class="">Projects</a>
-            <a href="#" class="">Education</a>
-            <a href="#" class="">About</a>
+            <a [routerLink]="['']" routerLinkActive="active" class="block rounded-md px-3 py-2" aria-current="page">Home</a>
+            <a (click)="navigateToAboutWithFragment()" routerLinkActive="active" class="block rounded-md px-3 py-2">Projects</a>
+            <a [routerLink]="['/about']" routerLinkActive="active" class="block rounded-md px-3 py-2">About</a>
           </div>
         </div>
       </div>
@@ -45,12 +44,13 @@
   </div>
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden" id="mobile-menu" [ngClass]="{'hidden': !dropdownOpen, 'block': dropdownOpen}">
-    <div class="space-y-1 px-2 pb-3 pt-2">
-      <a href="#" class="" aria-current="page">Home</a>
-      <a href="#" class="">Projects</a>
-      <a href="#" class="">Education</a>
-      <a href="#" class="">About</a>
+  <div class="sm:hidden function-based-values-demo" id="mobile-menu" [ngClass]="{'hidden': !dropdownOpen, 'block': dropdownOpen}">
+    <div class="space-y-1 px-2 pb-3 pt-2 demo-content">
+      <a [routerLink]="['']" routerLinkActive="active" class="block rounded-md px-3 py-2 el" aria-current="page" data-x="170">Home</a>
+      <a (click)="navigateToAboutWithFragment()" routerLinkActive="active" class="block rounded-md px-3 py-2 el" data-x="320">Projects</a>
+      <a [routerLink]="['/about']" routerLinkActive="active" class="block rounded-md px-3 py-2 el" data-x="30">About</a>
     </div>
   </div>
 </nav>
+
+<script src="anime.min.js"></script>
