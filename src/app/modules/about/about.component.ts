@@ -115,5 +115,4 @@ export class AboutComponent implements OnInit, AfterViewInit {
       this.renderer.setStyle(skill, 'font-size', `${randomFontSize}px`);
     });    
   }
-  
 }
