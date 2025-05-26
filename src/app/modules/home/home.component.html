@@ -3,14 +3,24 @@
         <app-monster></app-monster>
     </div>
     <div class="text">
-      <span class="title" [ngStyle]="{ 'opacity': textFirstOpacityValue / 100 }">Hi, my <br/> name is <span class="titleHighlight">Gear.</span></span>
-      <br/><br/>
-      <span class="description description-hidden md:inline-block" [ngStyle]="{ 'opacity': textSecondOpacityValue / 100 }">I’m passionate about crafting <span class="descriptionHighlight highlight">beautiful</span> and <span class="descriptionHighlight highlight">user-friendly</span> websites that <span class="descriptionHighlight highlight">solve real problems. Always ready for the next exciting project!</span></span>
+        <span class="title"
+            [ngStyle]="{ 'opacity': textFirstOpacityValue / 100 }">Hi, my <br />
+            name is <span class="titleHighlight">Gear.</span></span>
+        <br /><br />
+        <span class="description description-hidden md:inline-block"
+            [ngStyle]="{ 'opacity': textSecondOpacityValue / 100 }">I’m
+            passionate about crafting <span
+                class="descriptionHighlight highlight">beautiful</span> and
+            <span class="descriptionHighlight highlight">user-friendly</span>
+            websites that <span class="descriptionHighlight highlight">solve
+                real problems. Always ready for the next exciting
+                project!</span></span>
     </div>
 </div>
 
 <div class="container">
-    <div class="wave-text grid grid-row-7 grid-flow-col gap-1 w-20" [ngStyle]="{ 'opacity': containerOpacityValue / 100 }">
+    <div class="wave-text grid grid-row-7 grid-flow-col gap-1 w-20"
+        [ngStyle]="{ 'opacity': containerOpacityValue / 100 }">
         <span style="--i:1;">S</span>
         <span style="--i:2;">C</span>
         <span style="--i:3;">R</span>
@@ -25,22 +35,44 @@
 
 <div class="experience font-custom box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="mb-48">
-        <h1 class="work-experience sub-title">Work experience<br>that i have<h1 class="highlight">.</h1></h1>
+        <h1 class="work-experience sub-title">Work experience<br>that i have<h1
+                class="highlight">.</h1></h1>
         <div class="blod-line"></div>
-        <span class="text-justify description">I completed an 8-month internship at <span class="highlight">Codium company</span> as a front-end developer. During my time there, I learned how to work in a real development team, build responsive UIs, and collaborate using tools like Git.
-        I also had the chance to improve my problem-solving skills, communicate with cross-functional teams, and follow agile development practices. This experience helped me grow both technically and professionally, and confirmed my passion for building user-centered web applications.</span>
-        <app-button class="button" buttonText="About Codium Company" linkName="https://www.codium.co/"></app-button>
+        <span class="text-justify description">I completed an 8-month internship
+            at <span class="highlight">Codium company</span> as a front-end
+            developer. During my time there, I learned how to work in a real
+            development team, build responsive UIs, and collaborate using tools
+            like Git.
+            I also had the chance to improve my problem-solving skills,
+            communicate with cross-functional teams, and follow agile
+            development practices. This experience helped me grow both
+            technically and professionally, and confirmed my passion for
+            building user-centered web applications.</span>
+        <app-button class="button" buttonText="About Codium Company"
+            linkName="https://www.codium.co/"></app-button>
     </div>
 </div>
 
 <div class="font-custom box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="mb-8">
-        <h1 class="mb-8 sub-title">Projects on firebase<h1 class="highlight">.</h1></h1>
-        <span class="description">Here are some coding exercises I have done regarding <span class="highlight">html css typescript.</span></span>
+        <h1 class="mb-8 sub-title">Certificates<h1 class="highlight">.</h1></h1>
+        <span class="description">I’ve completed several certifications through
+            <a
+                class="highlight"
+                href="https://www.freecodecamp.org/"
+                target="_blank">freeCodeCamp</a> as
+            part of my journey in web development.
+            These reflect both my technical skills and hands-on experience.
+
+            <a
+                class="highlight"
+                href="https://www.freecodecamp.org/Alpha25">View
+                my certificates</a>
+        </span>
     </div>
 </div>
 
-<div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+<!-- <div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="image mb-8 video-container">
         <video autoplay loop muted>
             <source src="https://firebasestorage.googleapis.com/v0/b/resume7-21-2024.appspot.com/o/screen-calendar.webm?alt=media&token=52448940-3b77-4d2b-85bf-c8049c6df83d"  type="video/mp4">
@@ -57,37 +89,108 @@
         <span class="description mb-8"><span class="highlight">Use Angular Django</span> to create the website. <span class="highlight">Use MySQL</span> is database. Make is responsive website.</span>
     </div>
 </div>
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div>
-
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div> -->
 <div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="image mb-8 video-container">
-        <video autoplay loop muted>
-            <source src="https://firebasestorage.googleapis.com/v0/b/resume7-21-2024.appspot.com/o/screen-resume.webm?alt=media&token=bf960174-d8a5-4b55-970b-d0409ad5d707"  type="video/mp4">
-            Your browser does not support the video tag.
-        </video>    
-    </div>
-    <div class="image mb-8 image-container">
-        <img src="../../../assets/images/resume_2021.png" alt="">
+    <div class="image mb-8">
+        <img src="../../../assets/images/CertificateResponsiveWebDesign.png"
+            alt>
     </div>
     <div class="project-detail">
-        <h1 class="description-title">Resume in  2021</h1>
-        <span class="description">Resume in the form of a website, with the highlight being the space background and slides pages.</span>
+        <h1 class="description-title">Responsive Web Design Certification</h1>
+        <span class="description">Learned core <span
+                class="highlight">HTML</span> & <span
+                class="highlight">CSS</span> skills to build
+            <span class="highlight">flexible</span>, <span
+                class="highlight">responsive layouts</span> using <span
+                class="highlight">Flexbox</span> and <span
+                class="highlight">Grid</span> for smooth
+            experiences on all devices.</span>
         <br>
-        <span class="description"><span class="highlight">use HTML Css and Javascript</span> to create the website. And there's also the Swiper extension for page transitions by sliding.</span>
-        <app-button class="button" buttonText="View Resume 2021" linkName="https://resume-56691.web.app/"></app-button>
+        <span class="description">Showcases ability to design <span
+                class="highlight">responsive websites</span> that look <span
+                class="highlight">great</span> and work well on <span
+                class="highlight">desktops</span>, <span
+                class="highlight">tablets</span>, and
+            <span class="highlight">smartphones</span>.</span>
+        <app-button class="button" buttonText="View Certification"
+            linkName="https://www.freecodecamp.org/certification/Alpha25/responsive-web-design"></app-button>
     </div>
 </div>
 <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div>
 
 <div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="image mb-8">
-        <img src="../../../assets/images/cv-2022.png" alt="">
+        <img src="../../../assets/images/CertificateResponsiveWebDesign.png"
+            alt>
     </div>
     <div class="project-detail">
-        <h1 class="description-title">Resume in 2022</h1>
-        <span class="description">Resume in the form of a website. The highlight is changing pages and graphs.</span>
+        <h1 class="description-title">JavaScript Algorithms and Data
+            Structures</h1>
+        <span class="description">Mastered core <span
+                class="highlight">JavaScript</span> concepts, algorithms,
+            and <span
+                class="highlight">data structures</span> to solve complex
+            problems efficiently and write
+            clean, optimized code.</span>
         <br>
-        <span class="description"><span class="highlight">Use angular router firebase</span> to create a website. And the file structure has been organized to be more organized.</span>
-        <app-button class="button" buttonText="View Resume 2022" linkName="https://cv-2022-b75f5.firebaseapp.com/app-myself"></app-button>
+        <span class="description">Demonstrates strong skills in <span
+                class="highlight">problem-solving</span>,
+            <span
+                class="highlight">logical thinking</span>, and applying
+            algorithms in real-world coding
+            challenges and projects.</span>
+        <app-button class="button" buttonText="View Certification"
+            linkName="https://cv-2022-b75f5.firebaseapp.com/app-myself"></app-button>
+    </div>
+</div>
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div>
+
+<!-- 
+<div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="image mb-8 video-container">
+        <video autoplay loop muted>
+            <source
+                src="https://firebasestorage.googleapis.com/v0/b/resume7-21-2024.appspot.com/o/screen-resume.webm?alt=media&token=bf960174-d8a5-4b55-970b-d0409ad5d707"
+                type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="image mb-8 image-container">
+        <img src="../../../assets/images/resume_2021.png" alt>
+    </div>
+    <div class="project-detail">
+        <h1 class="description-title">Resume in 2021</h1>
+        <span class="description">Resume in the form of a website, with the
+            highlight being the space background and slides pages.</span>
+        <br>
+        <span class="description"><span class="highlight">use HTML Css and
+                Javascript</span> to create the website. And there's also the
+            Swiper extension for page transitions by sliding.</span>
+        <app-button class="button" buttonText="View Resume 2021"
+            linkName="https://resume-56691.web.app/"></app-button>
+    </div>
+</div>
+<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div> -->
+
+<div class="projects font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div class="image mb-8">
+        <img src="../../../assets/images/CertificateResponsiveWebDesign.png"
+            alt>
+    </div>
+    <div class="project-detail">
+        <h1 class="description-title">Front End Development Libraries</h1>
+        <span class="description">Skilled in <span
+                class="highlight">React</span>, <span
+                class="highlight">Redux</span>, <span
+                class="highlight">Bootstrap</span>, and <span
+                class="highlight">jQuery</span> to build dynamic, responsive,
+            and maintainable front-end applications.</span>
+        <br>
+        <span class="description">Demonstrates expertise in modern <span
+                class="highlight">front-end libraries</span> and tools for
+            creating seamless user interfaces and efficient web
+            workflows.</span>
+        <app-button class="button" buttonText="View Certification"
+            linkName="https://cv-2022-b75f5.firebaseapp.com/app-myself"></app-button>
     </div>
 </div>
