@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 
-.text {
+.text-content {
     width: 50%;
 }
 
@@ -19,7 +19,7 @@
     font-weight: 380;
 }
 
-.titleHighlight {
+.title-highlight {
     color: $primary-color;
     font-weight: 400;
 }
@@ -31,7 +31,7 @@
     line-height: normal;
 }
 
-.descriptionHighlight {
+.description-highlight {
     font-weight: 400;
 }
 
@@ -40,7 +40,7 @@ app-monster {
     height: auto;
 }
 
-.section {
+.hero-section {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -52,14 +52,14 @@ app-monster {
     box-sizing: border-box;
 }
 
-.container {
+.scroll-indicator .container {
     width: 80px;
     position: relative;
     left: 836px;
     bottom: 250px;
 }
 
-.line {
+.scroll-indicator .line {
     background-color: rgb(209, 213, 219);
     width: 1px;
     height: 50vh;
@@ -82,7 +82,6 @@ app-monster {
 }
 
 @keyframes wave {
-
     0% {
         transform: translateY(0px);
     }
@@ -97,7 +96,8 @@ app-monster {
     }
 }
 
-.box {
+.experience-section,
+.certificates-section {
     position: relative;
     bottom: 120px;
 }
@@ -110,9 +110,8 @@ app-monster {
 
 .font-custom .highlight {
     display: inline;
-    white-space: nowrap;
+    white-space: normal;
 }
-
 
 .blod-line {
     width: 150px;
@@ -123,19 +122,19 @@ app-monster {
     margin-bottom: 36px;
 }
 
-.image {
+.certificate-project .image {
     width: 50%;
     height: auto;
     margin-right: 2rem;
 }
 
-.projects {
+.certificate-project {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.projects span {
+.certificate-project span {
     width: 100%;
 }
 
@@ -144,7 +143,8 @@ app-monster {
     margin-left: 2rem;
 }
 
-.project-detail h1 {
+.project-detail h1,
+.project-detail h3 {
     font-size: 40px;
 }
 
@@ -157,18 +157,18 @@ app-monster {
 }
 
 @media (min-width: 1101px) {
-    .text {
+    .text-content {
         padding-bottom: 20rem;
     }
 }
 
 @media (max-width: 1100px) {
-    .flex {
+    .hero-section {
         flex-direction: column;
         text-align: center;
     }
 
-    .text {
+    .text-content {
         position: relative;
         bottom: 150px;
         width: 100%;
@@ -194,7 +194,7 @@ app-monster {
         visibility: hidden;
     }
 
-    .container {
+    .scroll-indicator .container {
         margin-left: auto;
         margin-right: auto;
         position: relative;
@@ -207,30 +207,30 @@ app-monster {
         margin-right: auto;
     }
 
-    .line {
+    .scroll-indicator .line {
         margin-left: auto;
         margin-right: auto;
         width: 0.5px;
         height: 380px;
     }
 
-    .experience {
+    .experience-section {
         width: 580px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
 
-    .box span {
+    .font-custom span {
         width: 100%;
     }
 
-    .image {
+    .certificate-project .image {
         width: 100%;
         margin-right: 0;
     }
 
-    .projects {
+    .certificate-project {
         display: block;
     }
 
@@ -273,13 +273,13 @@ app-monster {
         font-weight: 380 !important;
     }
 
-    .text {
+    .text-content {
         position: relative;
         bottom: 100px;
         width: 100%;
     }
 
-    .container {
+    .scroll-indicator .container {
         position: relative;
         left: 0;
         bottom: 142px;
@@ -289,7 +289,7 @@ app-monster {
         display: none;
     }
 
-    .experience {
+    .experience-section {
         position: static;
         width: 100%;
         padding-left: 2rem;
@@ -299,7 +299,8 @@ app-monster {
         align-items: center;
     }
 
-    .font-custom h1 {
+    .font-custom h1,
+    .font-custom h2 {
         font-size: 38px;
         font-weight: 400;
     }
@@ -308,7 +309,8 @@ app-monster {
         font-size: 16px;
     }
 
-    .font-custom h1 br {
+    .font-custom h1 br,
+    .font-custom h2 br {
         display: none;
     }
 
