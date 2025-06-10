@@ -1,4 +1,4 @@
-@import '../../../styles.scss';
+@import '../../../../styles.scss';
 
 .text {
     width: 50%;
@@ -125,7 +125,14 @@ app-monster {
 
 .image {
     width: 50%;
-    height: auto;
+    height: 350px;
+
+    img {
+        height: 100%;
+        object-fit: fit;
+        display: block;
+    }
+
     margin-right: 2rem;
 }
 

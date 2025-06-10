@@ -1,173 +1,37 @@
-<section
-    class="hero-section flex items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div [ngStyle]="{ 'opacity': imageOpacityValue / 100 }" aria-hidden="true">
+<div class="section flex items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <div [ngStyle]="{ 'opacity': imageOpacityValue / 100 }">
         <app-monster></app-monster>
     </div>
-    <div class="text-content">
-        <h1 class="title"
-            [ngStyle]="{ 'opacity': textFirstOpacityValue / 100 }">
-            Hi, my <br />
-            name is <span class="title-highlight">Gear.</span>
-        </h1>
-
-        <p class="description description-hidden md:inline-block"
-            [ngStyle]="{ 'opacity': textSecondOpacityValue / 100 }">
-            I'm passionate about crafting <span
-                class="description-highlight highlight">beautiful</span> and
-            <span class="description-highlight highlight">user-friendly</span>
-            websites that <span class="description-highlight highlight">solve
-                real problems</span>.
-            Always ready for the next <span
-                class="description-highlight highlight">exciting project!</span>
-        </p>
+    <div class="text">
+        <span class="title"
+            [ngStyle]="{ 'opacity': textFirstOpacityValue / 100 }">Hi, my <br />
+            name is <span class="titleHighlight">Gear.</span></span>
+        <br /><br />
+        <span class="description description-hidden md:inline-block"
+            [ngStyle]="{ 'opacity': textSecondOpacityValue / 100 }">I’m
+            passionate about crafting <span
+                class="descriptionHighlight highlight">beautiful</span> and
+            <span class="descriptionHighlight highlight">user-friendly</span>
+            websites that <span class="descriptionHighlight highlight">solve
+                real problems</span>. Always ready for the next <span
+                class="descriptionHighlight highlight">exciting
+                project!</span></span>
     </div>
-</section>
+</div>
 
-<section class="scroll-indicator" aria-label="Scroll indicator">
-    <div class="container">
-        <div class="wave-text grid grid-row-7 grid-flow-col gap-1 w-20"
-            [ngStyle]="{ 'opacity': containerOpacityValue / 100 }">
-            <span style="--i:1;">S</span>
-            <span style="--i:2;">C</span>
-            <span style="--i:3;">R</span>
-            <span style="--i:4;">O</span>
-            <span style="--i:5;">L</span>
-            <span style="--i:6;">L</span>
-        </div>
+<div class="container">
+    <div class="wave-text grid grid-row-7 grid-flow-col gap-1 w-20"
+        [ngStyle]="{ 'opacity': containerOpacityValue / 100 }">
+        <span style="--i:1;">S</span>
+        <span style="--i:2;">C</span>
+        <span style="--i:3;">R</span>
+        <span style="--i:4;">O</span>
+        <span style="--i:5;">L</span>
+        <span style="--i:6;">L</span>
+    </div>
+    <div>
         <div class="line mt-5"></div>
     </div>
-</section>
+</div>
 
-<section
-    class="experience-section font-custom box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
-    aria-labelledby="experience-heading">
-    <div class="mb-48">
-        <h2 id="experience-heading" class="work-experience sub-title">
-            Work experience<br>that I have<span class="highlight">.</span>
-        </h2>
-        <div class="blod-line"></div>
-        <p class="text-justify description">
-            I completed an 8-month internship at Codium company as a <span
-                class="highlight">front-end developer</span>.
-            During my time there, I learned how to work in a <span
-                class="highlight">real development team</span>,
-            build <span class="highlight">responsive UIs</span>, and collaborate
-            using tools like <span class="highlight">Git</span>.
-            I also had the chance to improve my <span
-                class="highlight">problem-solving skills</span>,
-            communicate with <span class="highlight">cross-functional
-                teams</span>, and follow <span class="highlight">agile
-                development</span> practices.
-            This experience helped me grow both <span
-                class="highlight">technically</span> and <span
-                class="highlight">professionally</span>,
-            and confirmed my passion for building <span
-                class="highlight">user-centered web applications</span>.
-        </p>
-        <app-button class="button" buttonText="About Codium Company"
-            linkName="https://www.codium.co/"></app-button>
-    </div>
-</section>
-
-<section
-    class="certificates-section font-custom box mx-auto max-w-7xl px-2 sm:px-6 lg:px-8"
-    aria-labelledby="certificates-heading">
-    <div class="mb-8">
-        <h2 id="certificates-heading" class="mb-8 sub-title">
-            Certificates<span class="highlight">.</span>
-        </h2>
-        <p class="description">
-            I've completed several certifications through
-            <a class="highlight" href="https://www.freecodecamp.org/"
-                target="_blank" rel="noopener noreferrer">freeCodeCamp</a> as
-            part of my journey in web development.
-            These reflect both my technical skills and hands-on experience.
-            <a class="highlight"
-                href="https://www.freecodecamp.org/Alpha25">View my
-                certificates</a>
-        </p>
-    </div>
-</section>
-
-<article
-    class="certificate-project font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="image mb-8">
-        <img src="../../../assets/images/CertificateResponsiveWebDesign.png"
-            alt="Responsive Web Design Certification">
-    </div>
-    <div class="project-detail">
-        <h3 class="description-title">Responsive Web Design Certification</h3>
-        <p class="description">
-            Learned core <span class="highlight">HTML</span> & <span
-                class="highlight">CSS</span> skills to build
-            <span class="highlight">flexible</span>, <span
-                class="highlight">responsive layouts</span> using
-            <span class="highlight">Flexbox</span> and <span
-                class="highlight">Grid</span> for smooth
-            experiences on all devices.
-        </p>
-        <p class="description">
-            Showcases ability to design <span class="highlight">responsive
-                websites</span> that look
-            <span class="highlight">great</span> and work well on <span
-                class="highlight">desktops</span>,
-            <span class="highlight">tablets</span>, and <span
-                class="highlight">smartphones</span>.
-        </p>
-        <app-button class="button" buttonText="View Certification"
-            linkName="https://www.freecodecamp.org/certification/Alpha25/responsive-web-design"></app-button>
-    </div>
-</article>
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div>
-
-<article
-    class="certificate-project font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="image mb-8">
-        <img src="../../../assets/images/CertificateJS.png"
-            alt="JavaScript Algorithms and Data Structures Certification">
-    </div>
-    <div class="project-detail">
-        <h3 class="description-title">JavaScript Algorithms and Data
-            Structures</h3>
-        <p class="description">
-            Mastered core <span class="highlight">JavaScript</span> concepts,
-            algorithms,
-            and <span class="highlight">data structures</span> to solve complex
-            problems efficiently and write clean, optimized code.
-        </p>
-        <p class="description">
-            Demonstrates strong skills in <span
-                class="highlight">problem-solving</span>,
-            <span class="highlight">logical thinking</span>, and applying
-            algorithms in real-world coding challenges and projects.
-        </p>
-        <app-button class="button" buttonText="View Certification"
-            linkName="https://www.freecodecamp.org/certification/Alpha25/javascript-algorithms-and-data-structures-v8"></app-button>
-    </div>
-</article>
-<div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 project-line"></div>
-
-<article
-    class="certificate-project font-custom mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div class="image mb-8">
-        <img src="../../../assets/images/CertificateFrontend.png"
-            alt="Front End Development Libraries Certification">
-    </div>
-    <div class="project-detail">
-        <h3 class="description-title">Front End Development Libraries</h3>
-        <p class="description">
-            Skilled in <span class="highlight">React</span>, <span
-                class="highlight">Redux</span>,
-            <span class="highlight">Bootstrap</span>, and <span
-                class="highlight">jQuery</span> to build dynamic, responsive,
-            and maintainable front-end applications.
-        </p>
-        <p class="description">
-            Demonstrates expertise in modern <span class="highlight">front-end
-                libraries</span> and tools for
-            creating seamless user interfaces and efficient web workflows.
-        </p>
-        <app-button class="button" buttonText="View Certification"
-            linkName="https://www.freecodecamp.org/certification/Alpha25/front-end-development-libraries"></app-button>
-    </div>
-</article>
+<app-side-projects></app-side-projects>

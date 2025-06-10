@@ -10,6 +10,9 @@ import { MonsterComponent } from './core/components/monster/monster.component';
 import { HomeComponent } from './modules/home/home.component';
 import { ButtonComponent } from './shared/components/button/button.component';
 import { AboutComponent } from './modules/about/about.component';
+import { WorkExperienceComponent } from './modules/component/work-experience/work-experience.component';
+import { CertificateComponent } from './modules/component/certificate/certificate.component';
+import { SideProjectsComponent } from './modules/component/side-projects/side-projects.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +22,9 @@ import { AboutComponent } from './modules/about/about.component';
     HomeComponent,
     ButtonComponent,
     AboutComponent,
+    WorkExperienceComponent,
+    CertificateComponent,
+    SideProjectsComponent,
   ],
   imports: [
     BrowserModule,
