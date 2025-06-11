@@ -13,6 +13,7 @@ import { AboutComponent } from './modules/about/about.component';
 import { WorkExperienceComponent } from './modules/component/work-experience/work-experience.component';
 import { CertificateComponent } from './modules/component/certificate/certificate.component';
 import { SideProjectsComponent } from './modules/component/side-projects/side-projects.component';
+import { GoTopButtonComponent } from './shared/components/go-top-button/go-top-button.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SideProjectsComponent } from './modules/component/side-projects/side-pr
     WorkExperienceComponent,
     CertificateComponent,
     SideProjectsComponent,
+    GoTopButtonComponent,
   ],
   imports: [
     BrowserModule,
