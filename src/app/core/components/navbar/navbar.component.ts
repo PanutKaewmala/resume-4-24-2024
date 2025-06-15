@@ -88,6 +88,24 @@ export class NavbarComponent implements OnInit {
     }
   }
 
+  scrollToExperience(): void {
+    if (this.router.url !== '/about') {
+      this.router.navigateByUrl('/about').then(() => {
+        setTimeout(() => {
+          const element = document.getElementById('experience');
+          if (element) {
+            element.scrollIntoView({ behavior: 'smooth' });
+          }
+        }, 500);
+      });
+    } else {
+      const element = document.getElementById('experience');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
+
   scrollToCertificates(): void {
     if (this.router.url !== '/about') {
       this.router.navigateByUrl('/about').then(() => {

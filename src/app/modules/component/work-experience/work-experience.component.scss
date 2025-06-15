@@ -156,6 +156,14 @@ app-monster {
     margin-bottom: 2rem;
 }
 
+.caption {
+    background-color: rgba(0, 0, 0, 0.4);
+    color: var(--text-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
 @media (min-width: 1101px) {
     .text {
         padding-bottom: 20rem;
@@ -216,9 +224,6 @@ app-monster {
 
     .experience {
         width: 580px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .box span {
@@ -294,9 +299,6 @@ app-monster {
         width: 100%;
         padding-left: 2rem;
         padding-right: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
     }
 
     .font-custom h1 {

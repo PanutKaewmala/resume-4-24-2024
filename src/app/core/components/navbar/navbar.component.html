@@ -32,13 +32,16 @@
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
             <a [routerLink]="['']" routerLinkActive="active"
-              class="block rounded-md px-2 py-2 space-between-menu-items" aria-current="page">Home</a>
+              class="block rounded-md px-2 py-2 space-between-menu-items"
+              aria-current="page">Home</a>
             <a (click)="scrollToProjects()" routerLinkActive="active"
               class="block rounded-md px-2 py-2 space-between-menu-items">Projects</a>
             <a [routerLink]="['/about']" routerLinkActive="active"
               class="block rounded-md px-2 py-2 space-between-menu-items">About</a>
             <a (click)="scrollToSkills()" routerLinkActive="active"
               class="block rounded-md px-2 py-2 space-between-menu-items">Skills</a>
+            <a (click)="scrollToExperience()" routerLinkActive="active"
+              class="block rounded-md px-2 py-2 space-between-menu-items">Experience</a>
             <a (click)="scrollToCertificates()" routerLinkActive="active"
               class="block rounded-md px-2 py-2 space-between-menu-items">Certificates</a>
           </div>
@@ -71,6 +74,8 @@
         class="block rounded-md px-3 py-2">About</a>
       <a (click)="scrollToSkills()" routerLinkActive="active"
         class="block rounded-md px-3 py-2">Skills</a>
+      <a (click)="scrollToExperience()" routerLinkActive="active"
+        class="block rounded-md px-3 py-2">Experience</a>
       <a (click)="scrollToCertificates()" routerLinkActive="active"
         class="block rounded-md px-3 py-2">Certificates</a>
       <!-- Animation Menu -->
