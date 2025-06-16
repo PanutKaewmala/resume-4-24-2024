@@ -234,17 +234,13 @@ app-monster {
 
     .image {
         width: 100%;
-        /* ย่อกรอบลง */
         height: auto;
-        /* ให้สูงปรับตามภาพ (หรือจะ fix ก็ได้) */
         margin-right: 0;
     }
 
     .image img {
         height: auto;
-        /* ปรับตามขนาดกรอบ */
         aspect-ratio: 16 / 9;
-        /* ควบคุมสัดส่วนให้สวย */
     }
 
 

@@ -1,7 +1,7 @@
 <nav>
   <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
     <div class="relative flex h-32 items-center justify-between">
-      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+      <div class="absolute inset-y-0 left-0 flex items-center lg:hidden">
         <!-- Mobile menu button-->
         <button type="button"
           class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
@@ -21,7 +21,7 @@
           </svg>
         </button>
       </div>
-      <div class="flex flex-1 items-center justify-center sm:justify-start">
+      <div class="flex flex-1 items-center justify-center">
         <div class="flex flex-shrink-0 items-center">
           <a [routerLink]="['']" routerLinkActive="active">
             <img class="h-24 w-auto"
@@ -29,7 +29,8 @@
               alt="web-icon">
           </a>
         </div>
-        <div class="hidden sm:ml-6 sm:block">
+        <!-- Main Menu -->
+        <div class="hidden sm:ml-6 lg:block">
           <div class="flex space-x-4">
             <a [routerLink]="['']" routerLinkActive="active"
               class="block rounded-md px-2 py-2 space-between-menu-items"
@@ -48,7 +49,7 @@
         </div>
       </div>
       <div
-        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+        class="absolute inset-y-0 right-0 flex items-center pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
         <a href="https://www.facebook.com/profile.php?id=100009414306153"
           class="flex items-center text-gray-300 rounded-md px-3 py-2 text-sm font-medium hire-me-link"
           aria-current="page"
@@ -63,7 +64,7 @@
   </div>
 
   <!-- Mobile menu, show/hide based on menu state. -->
-  <div class="sm:hidden function-based-values-demo" id="mobile-menu"
+  <div class="lg:hidden function-based-values-demo" id="mobile-menu"
     [ngClass]="{'hidden': !dropdownOpen, 'block': dropdownOpen}">
     <div class="space-y-1 px-2 pb-3 pt-2 demo-content">
       <a [routerLink]="['']" routerLinkActive="active"
@@ -90,4 +91,4 @@
   </div>
 </nav>
 
-<script src="anime.min.js"></script>
+<!-- <script src="anime.min.js"></script> -->
