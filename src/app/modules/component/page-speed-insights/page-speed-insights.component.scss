@@ -10,11 +10,19 @@
     font-weight: 380;
 }
 
+.sub-description {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+
 .project-detail h1 {
     font-size: 40px;
 }
 
-.font-custom .highlight {
+.font-custom {
     display: inline;
     white-space: normal;
 }
@@ -33,6 +41,10 @@
         font-size: 38px;
         font-weight: 380;
     }
+
+    .sub-description {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 650px) {
@@ -44,6 +56,11 @@
     .description-title {
         font-size: 22px !important;
         font-weight: 380 !important;
+    }
+
+    .sub-description {
+        font-size: 18px;
+        width: 100%;
     }
 
     .font-custom h1 {

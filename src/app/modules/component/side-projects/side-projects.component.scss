@@ -10,6 +10,20 @@
     font-weight: 380;
 }
 
+.sub-description {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
+.description {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+}
+
 .box {
     position: relative;
     bottom: 120px;
@@ -18,7 +32,6 @@
 .font-custom span {
     display: block;
     width: 50%;
-    font-size: 20px;
 }
 
 .font-custom .highlight {
@@ -79,6 +92,14 @@
         font-weight: 380;
     }
 
+    .sub-description {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 20px;
+    }
+
     .box span {
         width: 100%;
     }
@@ -115,13 +136,19 @@
         font-weight: 380 !important;
     }
 
+    .sub-description {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .description {
+        font-size: 16px;
+        width: 100%;
+    }
+
     .font-custom h1 {
         font-size: 38px;
         font-weight: 400;
-    }
-
-    .font-custom span {
-        font-size: 16px;
     }
 
     .font-custom h1 br {

@@ -27,7 +27,7 @@
     font-weight: 380;
 }
 
-.detail {
+.sub-description {
     font-size: 24px;
     font-style: normal;
     font-weight: 200;
@@ -142,9 +142,12 @@
         font-size: 60px;
     }
 
-    .detail {
+    .sub-description {
+        font-size: 22px;
+    }
+
+    .description {
         font-size: 20px;
-        font-style: normal;
     }
 }
 
@@ -157,7 +160,12 @@
         font-size: 28px;
     }
 
-    .detail {
+    .sub-description {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .description {
         font-size: 16px;
         width: 100%;
     }
