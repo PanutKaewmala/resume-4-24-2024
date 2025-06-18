@@ -1,21 +1,7 @@
 @import '../../../../styles.scss';
 
-.text {
-    width: 50%;
-}
-
-.title {
-    font-size: 78px;
-    font-weight: 400;
-}
-
 .sub-title {
     font-size: 60px;
-    font-weight: 380;
-}
-
-.description-title {
-    font-size: 40px;
     font-weight: 380;
 }
 
@@ -29,72 +15,6 @@
     font-style: normal;
     font-weight: 200;
     line-height: normal;
-}
-
-.descriptionHighlight {
-    font-weight: 400;
-}
-
-app-monster {
-    max-width: 100%;
-    height: auto;
-}
-
-.section {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
-}
-
-.container {
-    width: 80px;
-    position: relative;
-    left: 836px;
-    bottom: 250px;
-}
-
-.line {
-    background-color: rgb(209, 213, 219);
-    width: 1px;
-    height: 50vh;
-    margin-left: 38.89px;
-    animation: vLineIn 1s ease-in-out 1.5s backwards;
-}
-
-.wave-text span {
-    font-size: 12px;
-    position: relative;
-    display: inline-block;
-    animation: wave 1s ease-in-out infinite;
-    animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes vLineIn {
-    0% {
-        transform: scaleY(0)
-    }
-}
-
-@keyframes wave {
-
-    0% {
-        transform: translateY(0px);
-    }
-
-    20% {
-        transform: translateY(-10px);
-    }
-
-    40%,
-    100% {
-        transform: translate(0px);
-    }
 }
 
 .box {
@@ -113,7 +33,6 @@ app-monster {
     white-space: normal;
 }
 
-
 .blod-line {
     width: 150px;
     height: 6px;
@@ -121,39 +40,6 @@ app-monster {
     background: $primary-color;
     margin-top: 36px;
     margin-bottom: 36px;
-}
-
-.image {
-    width: 50%;
-    height: auto;
-    margin-right: 2rem;
-}
-
-.projects {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.projects span {
-    width: 100%;
-}
-
-.project-detail {
-    width: 50%;
-    margin-left: 2rem;
-}
-
-.project-detail h1 {
-    font-size: 40px;
-}
-
-.project-line {
-    width: 94%;
-    height: 0.5px;
-    background: rgb(209, 213, 219);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
 }
 
 .caption {
@@ -164,62 +50,10 @@ app-monster {
     font-size: 0.75rem;
 }
 
-@media (min-width: 1101px) {
-    .text {
-        padding-bottom: 20rem;
-    }
-}
-
 @media (max-width: 1100px) {
-    .flex {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text {
-        position: relative;
-        bottom: 150px;
-        width: 100%;
-    }
-
-    .title {
-        font-size: 68px;
-        font-weight: 380;
-        line-height: 5rem;
-    }
-
     .sub-title {
         font-size: 50px;
         font-weight: 380;
-    }
-
-    .description-title {
-        font-size: 38px;
-        font-weight: 380;
-    }
-
-    .description-hidden {
-        visibility: hidden;
-    }
-
-    .container {
-        margin-left: auto;
-        margin-right: auto;
-        position: relative;
-        left: 0;
-        bottom: 172px;
-    }
-
-    .wave-text {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .line {
-        margin-left: auto;
-        margin-right: auto;
-        width: 0.5px;
-        height: 380px;
     }
 
     .experience {
@@ -230,68 +64,12 @@ app-monster {
         width: 100%;
     }
 
-    .image {
-        width: 100%;
-        margin-right: 0;
-    }
-
-    .projects {
-        display: block;
-    }
-
-    .project-detail {
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-.image-container {
-    display: none;
-}
-
-.video-container {
-    display: block;
 }
 
 @media (max-width: 650px) {
-    .image-container {
-        display: block;
-    }
-
-    .video-container {
-        display: none;
-    }
-
-    .title {
-        font-size: 38px;
-        font-weight: 380;
-        line-height: 3rem;
-    }
-
     .sub-title {
         font-size: 28px !important;
         font-weight: 380 !important;
-    }
-
-    .description-title {
-        font-size: 22px !important;
-        font-weight: 380 !important;
-    }
-
-    .text {
-        position: relative;
-        bottom: 100px;
-        width: 100%;
-    }
-
-    .container {
-        position: relative;
-        left: 0;
-        bottom: 142px;
-    }
-
-    .title br {
-        display: none;
     }
 
     .experience {
@@ -311,10 +89,6 @@ app-monster {
     }
 
     .font-custom h1 br {
-        display: none;
-    }
-
-    .project-line {
         display: none;
     }
 }
