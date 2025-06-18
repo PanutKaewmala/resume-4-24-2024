@@ -1,11 +1,15 @@
-<div class="section flex items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-    <div [ngStyle]="{ 'opacity': imageOpacityValue / 100 }">
+<div
+    class="section flex items-center mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 min-h-[350px]">
+
+    <div [ngStyle]="{ 'opacity': imageOpacityValue / 100 }"
+        class="min-w-[200px] min-h-[200px]">
         <app-monster></app-monster>
     </div>
+
     <div class="text">
-        <span class="title"
-            [ngStyle]="{ 'opacity': textFirstOpacityValue / 100 }">Hi, my <br />
-            name is <span class="titleHighlight">Gear.</span></span>
+        <span class="title block min-h-[80px]">Hi, my <br />
+            name is <span class="titleHighlight">Gear.</span>
+        </span>
         <br /><br />
         <span class="description description-hidden md:inline-block"
             [ngStyle]="{ 'opacity': textSecondOpacityValue / 100 }">I’m
