@@ -14,6 +14,7 @@ import { WorkExperienceComponent } from './modules/component/work-experience/wor
 import { CertificateComponent } from './modules/component/certificate/certificate.component';
 import { SideProjectsComponent } from './modules/component/side-projects/side-projects.component';
 import { GoTopButtonComponent } from './shared/components/go-top-button/go-top-button.component';
+import { PageSpeedInsightsComponent } from './modules/component/page-speed-insights/page-speed-insights.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { GoTopButtonComponent } from './shared/components/go-top-button/go-top-b
     CertificateComponent,
     SideProjectsComponent,
     GoTopButtonComponent,
+    PageSpeedInsightsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,49 @@
+@import '../../../../styles.scss';
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 380;
+}
+
+.description-title {
+    font-size: 40px;
+    font-weight: 380;
+}
+
+.project-detail h1 {
+    font-size: 40px;
+}
+
+.font-custom .highlight {
+    display: inline;
+    white-space: normal;
+}
+
+@media (max-width: 1100px) {
+    .sub-title {
+        font-size: 50px;
+        font-weight: 380;
+    }
+
+    .description-title {
+        font-size: 38px;
+        font-weight: 380;
+    }
+}
+
+@media (max-width: 650px) {
+    .sub-title {
+        font-size: 28px !important;
+        font-weight: 380 !important;
+    }
+
+    .description-title {
+        font-size: 22px !important;
+        font-weight: 380 !important;
+    }
+
+    .font-custom h1 {
+        font-size: 38px;
+        font-weight: 400;
+    }
+}
